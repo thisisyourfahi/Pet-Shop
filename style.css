@@ -3,20 +3,30 @@
 @import url('https://fonts.googleapis.com/css2?family=ADLaM+Display&family=Sora:wght@100..800&display=swap');
 
 .adlam-font {
-  font-family: "ADLaM Display", system-ui;
-  font-weight: 400;
-  font-style: normal;
+    font-family: "ADLaM Display", system-ui;
+    font-weight: 400;
+    font-style: normal;
 }
 
 .sora-font {
-  font-family: "Sora", sans-serif;
-  font-optical-sizing: auto;
+    font-family: "Sora", sans-serif;
+    font-optical-sizing: auto;
 }
 
 /* Shared styles */
 * {
     margin: 0;
     padding: 0;
+}
+
+.pd-18 {
+    padding: 1rem 8rem;
+}
+
+.set-bg {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
 body {
@@ -30,8 +40,8 @@ button {
     border-radius: .5rem;
     background-color: transparent;
     padding: .5rem 1.5rem;
-    font-size: 1rem;
 }
+
 
 .yellow-text {
     background-color: #FFDC26;
@@ -54,31 +64,95 @@ nav {
     justify-content: space-between;
     align-items: center;
 
-    padding: 1rem 8rem;
     background-color: #FFF9F4;
 }
+
 .left {
     display: flex;
     align-items: center;
     gap: .5rem;
 }
+
 .nav-links {
     display: flex;
-    gap: 2rem ;
+    gap: 2rem;
 }
+
 .nav-links li {
     list-style: none;
 }
+
 .nav-links li a {
     text-decoration: none;
     color: black;
 }
+
 .right {
     display: flex;
     align-items: center;
-    /* justify-content: space-evenly; */
     gap: .5rem;
 }
+
 .hamburger {
     display: none;
+}
+
+/* hero-section styles */
+.hero-section {
+    padding-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+}
+
+.hero {
+    min-height: 750px;
+    background-image: url('./assets/cat-big.png');
+}
+.hero > div {
+    max-width: 680px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 2rem
+}
+.hero > div h1 {
+    font-size: 3.5rem;
+}
+
+.hero > div button {
+    align-self: flex-start;
+}
+
+.hero-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.card-container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+
+    gap: 1rem;
+}
+.h-card {
+    padding: 5rem 0;
+    background-color: #F9DF8A;
+    border-radius: 1rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+}
+.h-card-img {
+    background-color: white;
+    height: 5rem;
+    width: 5rem;
+    margin: 0 auto;
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
