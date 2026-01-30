@@ -79,6 +79,20 @@ a:hover {
     border-bottom: 2px  dashed blue;
 }
 
+.h-card:hover, 
+.t-card:hover,
+.d-card-container > *:hover {
+    cursor: pointer;
+    box-shadow: 5px 5px 30px;
+    transform: scale(1.1) translate(30px);
+
+
+    transition: 
+        transform 200ms ease-in-out,
+        box-shadow 200ms ease-in-out;
+}
+
+
 /* Navbar related styles */
 nav {
     display: flex;
@@ -328,6 +342,7 @@ footer {
 }
 
 .form-section {
+    
     position: absolute;
     left: 50%;
     top: 40%;
@@ -337,6 +352,7 @@ footer {
     border-radius: 1rem;
     padding: 3rem;
     background-color: #FFF9F4;
+    box-shadow: 10px 10px 20px;
 
     display: flex;
     justify-content: space-around;
