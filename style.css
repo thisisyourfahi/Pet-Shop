@@ -65,6 +65,20 @@ button {
     background-color: #FFDC26;
 }
 
+button:hover {
+    cursor: pointer;
+    transform: scale(1.15);
+    box-shadow: 0 0 10px;
+
+    transition: 
+        transform 100ms linear,
+        box-shadow 100ms linear;
+}
+
+a:hover {
+    border-bottom: 2px  dashed blue;
+}
+
 /* Navbar related styles */
 nav {
     display: flex;
