@@ -251,6 +251,8 @@ nav {
     display: flex;
     flex-direction: column;
     gap: 2rem;
+
+    margin-bottom: 15rem;
 }
 
 .d-card-container {
@@ -298,4 +300,91 @@ nav {
     background-repeat: no-repeat;
     background-position: bottom right;
     background-size: contain;
+}
+
+/* footer related styles */
+footer {
+    position: relative;
+    background-color: rgba(255, 220, 38, 0.5);
+    padding: 20rem 8rem 2rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+}
+
+.form-section {
+    position: absolute;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -90%);
+    min-width: 70%;
+
+    border-radius: 1rem;
+    padding: 3rem;
+    background-color: #FFF9F4;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.form-right {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+.form-right input {
+    min-width: 300px;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: .5rem
+}
+.form-right button {
+    align-self: flex-start;
+}
+
+.footer-section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);   
+    gap: 8rem;
+
+    position: relative
+}
+
+.footer-left > div {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 1rem;
+}
+
+.footer-mid ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.footer-mid ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footer-right {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+}
+
+.footer-logos {
+    display: flex;
+    gap: 1rem;
+}
+
+.footer-logos i {
+    font-size: 1.5rem;
 }
