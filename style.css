@@ -100,7 +100,8 @@ nav {
     align-items: center;
 
     background-color: #FFF9F4;
-    /* margin-bottom: 3rem; */
+    padding: 1rem 8rem;
+    margin-bottom: 3rem;
 }
 
 .left {
@@ -139,7 +140,8 @@ nav {
     flex-direction: column;
     gap: 6rem;
 
-    /* margin-bottom: 3rem; */
+    padding: 1rem 8rem;
+    margin-bottom: 3rem;
 }
 
 .hero {
@@ -213,6 +215,7 @@ nav {
 .tren-card-container {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(3, 1fr);
     gap: 1rem;
 }
 

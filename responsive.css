@@ -1,0 +1,115 @@
+/* responsive for small device */
+@media screen and (max-width: 576px) {
+
+    .h-card:hover,
+    .t-card:hover,
+    .d-card-container>*:hover {
+        cursor: pointer;
+        box-shadow: 5px 5px 30px;
+        transform: scale(1.1);
+
+
+        transition:
+            transform 200ms ease-in-out,
+            box-shadow 200ms ease-in-out;
+    }
+
+    nav {
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+    }
+
+    .left h1 {
+        font-size: 1.5rem;
+    }
+
+    .left img {
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-links,
+    .right {
+        display: none;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    .hero-section {
+        padding: 1rem 1rem;
+        margin: 0 0 1rem;
+        gap: 2rem;
+    }
+
+    .hero {
+        min-height: 450px;
+        background-size: contain;
+        background-position: bottom;
+    }
+
+    .hero>div h1 {
+        font-size: 2rem;
+    }
+
+    .hero-cards h1 {
+        font-size: 2rem;
+    }
+
+    .card-container>* {
+        grid-column: span 3;
+    }
+
+    .trending-section {
+        padding: 1rem;
+        margin-bottom: 1rem;
+    }
+    .tren-card-container {
+        grid-template-columns: repeat(4, 1fr);
+    }
+    .tren-card-container> :first-child,
+    .tren-card-container> :nth-child(10) {
+        grid-column: span 4;
+    }
+    .tren-card-container> :nth-child(2),
+    .tren-card-container> :nth-child(3),
+    .tren-card-container> :nth-child(4),
+    .tren-card-container> :nth-child(5),
+    .tren-card-container> :nth-child(6),
+    .tren-card-container> :nth-child(7),
+    .tren-card-container> :nth-child(8), 
+    .tren-card-container> :nth-child(9) {
+        grid-column: span 2;
+    }
+
+    .discount-section {
+        padding: 1rem;
+        margin-bottom: 25rem;
+    }
+
+    .d-card-container> :first-child,
+    .d-card-container> :last-child {
+        grid-column: span 5;
+    }
+    footer {
+        padding: 22rem 1rem 1rem;
+    }
+    .form-section {
+        padding: 1rem;
+        flex-direction: column;
+        box-shadow: none;
+    }
+    .form-right {
+        text-align: center;
+    }
+    .form-right button {
+        align-self: center;
+    }
+    .footer-section > * {
+        grid-column: span 3;
+    }
+    .footer-section {
+        gap: 2rem;
+    }
+}
